@@ -12,4 +12,4 @@ News API = https://newsapi.org/
 (로컬 전용 api로 도메인에서는 적용이 안됩니다.)
 
 ## 도메인주소
-https://kms-to-do-list.netlify.app/
+https://kms-newspage.netlify.app
