@@ -1,0 +1,148 @@
+.menu-search-area i{
+    margin-top : 1em;
+}
+
+.menu-search-area i:hover{
+    cursor: pointer;
+}
+
+#search-area{
+    display: none;
+}
+
+#search-area button{
+    background-color: dimgray;
+    color:white;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.title{
+    font-family: 'Caprasimo', cursive;
+    margin: 2rem;
+    text-align: center;
+    text-decoration: underline 3px dimgrey;
+    cursor: pointer;
+}
+
+.title span{
+    font-size: 1.2em;
+    color:dimgrey;
+}
+
+#category-menu-sm{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 60px;
+    width: 0;
+    background-color: beige;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s; 
+}
+
+#category-menu-sm button{
+    background: none;
+    border: none;
+    margin: 1em;
+    width: 150px;
+    text-align: center;
+}
+
+#category-menu-sm i{
+    margin-bottom: 2em;
+    align-self: flex-end;
+    margin-right: 2em;
+}
+
+#category-menu-sm i:hover{
+    cursor: pointer;
+}
+
+#category-menu-sm button:hover{
+    background-color: dimgrey;
+    color: white;
+}
+
+
+#category-menu-lg{
+    text-align: center;
+    border-top: 2px black solid;
+    border-bottom: 5px black double;
+}
+
+#category-menu-lg button{
+    background: none;
+    border: none;
+    margin: 1em;
+    text-align: center;
+}
+#category-menu-lg button:hover{
+    background-color: dimgrey;
+    color: white;
+}
+
+.news-list{
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px black solid;
+}
+.news-image{
+    max-width: 350px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: dimgrey;
+    border-color: dimgrey;
+}
+
+.page-link{
+    color: black;
+}
+
+.page-link:focus{
+    color: black;
+    
+    box-shadow: 0 0 0 0.25rem rgba(79, 80, 82, 0.25);
+}
+
+.news-title{
+    cursor: pointer;
+}
+
+.img-div{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:48rem){
+    #category-menu-lg{
+        display: none;
+    }
+
+    .menu-icon{
+        display:inline;
+    }
+
+}
+

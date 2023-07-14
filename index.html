@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7f620221f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="category-menu" id="category-menu-sm">
+        <i class="fa-solid fa-x" id="close-button" onclick="closeSideBar()"></i>
+        <button>GENERAL</button>
+        <button>BUSINESS</button>
+        <button>ENTERTAINMENT</button>
+        <button>HEALTH</button>
+        <button>SCIENCE</button>
+        <button>SPORTS</button>
+        <button>TECHNOLOGY</button>
+    </div>
+
+
+
+    <div class="container">
+        <div>
+            <div class="menu-search-area">
+                <i class="fa-solid fa-bars menu-icon" onclick="openSideBar()"></i>
+                <i class="fa-solid fa-magnifying-glass" onclick="openSearch()"></i>
+                <span id="search-area">
+                    <input placeholder="Input Keyword" id="user-input">
+                    <button id="search-button">search</button>
+                </span>
+            </div>
+        
+            <h1 class="title" onclick="callApi()">Show Korean New<span>s</span></h1>
+
+            <div class="category-menu" id="category-menu-lg">
+                <button>GENERAL</button>
+                <button>BUSINESS</button>
+                <button>ENTERTAINMENT</button>
+                <button>HEALTH</button>
+                <button>SCIENCE</button>
+                <button>SPORTS</button>
+                <button>TECHNOLOGY</button>
+            </div>
+        </div>
+
+        <section id="news-area"></section>
+    </div>
+
+
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+
+
+
+        </ul>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
