@@ -8,6 +8,7 @@ let totalResults = 0;
 let totalPage = 0;
 let currentPage =1;
 let url="";
+let data="";
 let articles=[];
 
 //default page load
@@ -18,19 +19,32 @@ const callApi = ()=>{
 
 //api logic
 const getApi = async()=>{
+    try{
     url.searchParams.set('page', currentPage);
     let header = new Headers({"x-api-key" : apiKey});
     let response = await fetch(url,{headers:header});
-    let data = await response.json()
-    articles = await data.articles;
-
+    data = await response.json()
+    
     console.log(response);
     console.log(data);
-    console.log(articles);
 
-    totalResults=data.totalResults;
+    if(response.status == 200){
+        articles = await data.articles;
+        console.log(articles);
+        totalResults=data.totalResults;
+        render();
+    }else{
+        throw new Error (data.message);
+    }
 
-    render();
+    }catch(error){
+        document.getElementById("news-area").innerHTML=
+        `<div class="alert alert-danger" role="alert">
+            <div>
+                ErrorMessage = ${error}
+            </div>
+        </div>`
+    }
 }
 
 //time moment 
