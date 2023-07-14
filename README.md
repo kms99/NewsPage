@@ -5,7 +5,7 @@ News api를 이용하여 만든 뉴스 페이지 입니다.
 JAVASCRIPT강의(codingnoona)에 나온 뉴스페이지 프로젝트를 공부한 코드입니다.
 
 ## 주요 항목
-pagination, sidebar, 반응형 웹 디자인 (bootstrap), CND (boopstrap, fontawesome)
+pagination, sidebar, 반응형 웹 디자인 (bootstrap), CDN (boopstrap, fontawesome)
 
 ## 사용한 API 정보
 News API = https://newsapi.org/
